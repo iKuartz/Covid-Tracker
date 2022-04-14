@@ -1,11 +1,11 @@
-import "./App.css";
-import { Routes, Route } from "react-router-dom";
-import React, { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { getCountries } from "./redux/countries/countries";
-import Navigation from "./components/Navigation";
-import CountriesContainer from "./components/CountriesContainer";
-import RegionsContainer from "./components/RegionsContainer";
+import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { getCountries } from './redux/countries/countries';
+import Navigation from './components/Navigation';
+import CountriesContainer from './components/CountriesContainer';
+import RegionsContainer from './components/RegionsContainer';
 
 function App() {
   const dispatch = useDispatch();
@@ -16,8 +16,8 @@ function App() {
     <div>
       <Navigation />
       <Routes>
-        <Route path='/' element={<CountriesContainer />} />
-        <Route path='/:id' element={<RegionsContainer />} />
+        <Route path="/" element={<CountriesContainer />} />
+        <Route path="/:id" element={<RegionsContainer />} />
       </Routes>
     </div>
   );
