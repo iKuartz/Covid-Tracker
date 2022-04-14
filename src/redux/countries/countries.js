@@ -1,7 +1,7 @@
-import fetchCountriesApi from "../../api/countries-api";
-import handleData from "../../helpers/handleData";
+import fetchCountriesApi from '../../api/countries-api';
+import handleData from '../../helpers/handleData';
 
-export const GET_COUNTRIES = "bookStore/books/COUNTRIES";
+export const GET_COUNTRIES = 'bookStore/books/COUNTRIES';
 
 const initialState = [];
 

@@ -1,9 +1,9 @@
 /* eslint-disable camelcase */
-import React from "react";
-import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
-import OneRegion from "./OneRegion";
-import "./RegionsContainer.css";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { useParams } from 'react-router-dom';
+import OneRegion from './OneRegion';
+import './RegionsContainer.css';
 
 function RegionsContainer() {
   const countries = useSelector((state) => state.countriesReducer);
@@ -26,11 +26,11 @@ function RegionsContainer() {
 
   return (
     <div>
-      <div className='container flex justify-evenly'>
-        <div className='country-name'>
+      <div className="container flex justify-evenly">
+        <div className="country-name">
           <h3>{name}</h3>
         </div>
-        <div className='country-stats'>
+        <div className="country-stats">
           <h6>
             <span>Confirmed: </span>
             {today_confirmed}
@@ -49,12 +49,12 @@ function RegionsContainer() {
           </h6>
         </div>
       </div>
-      <div className='bg-secondary'>
-        <div className='flex container stats justify-between'>
-          <h5 className='title-stats'>Stats by region</h5>
+      <div className="bg-secondary">
+        <div className="flex container stats justify-between">
+          <h5 className="title-stats">Stats by region</h5>
         </div>
       </div>
-      <ul className='container ul-regions'>
+      <ul className="container ul-regions">
         {regions.length === 0 ? (
           <h5>No data for regions </h5>
         ) : (
@@ -76,7 +76,7 @@ function RegionsContainer() {
                 todayOpenCases={today_open_cases}
                 todayRecovered={today_recovered}
               />
-            )
+            ),
           )
         )}
       </ul>
