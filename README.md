@@ -38,6 +38,8 @@ Run
 
 Contributions, issues, and feature requests are welcome, feel free to check the [issues page](../../issues/).
 
+Original design idea by Nelson Sakwa on Behance.
+
 ## License
 
 This project is [MIT](LICENSE) licensed.
