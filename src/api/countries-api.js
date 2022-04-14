@@ -10,13 +10,13 @@ const handleError = (response) => {
   } else {
     return response;
   }
-}; // handler function that throws any encountered error
+};
 
 const fetchCountriesApi = () => {
   const resultFetch = fetch(url)
-    .then(handleError) // skips to .catch if error is thrown
+    .then(handleError)
     .then((res) => res.json())
-    .catch((error) => error); // catches the error and logs it
+    .catch((error) => error);
 
   return resultFetch;
 };

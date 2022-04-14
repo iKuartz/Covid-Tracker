@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { NavLink } from 'react-router-dom';
-import map from '../assets/images/icons8-map-160.png';
+import map from '../assets/images/map-icon.png';
 import './OneCountry.css';
 
 function OneCountry({ name, today_confirmed }) {
