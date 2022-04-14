@@ -1,3 +1,4 @@
+@import url('http://fonts.cdnfonts.com/css/gill-sans');
 @import url('https://fonts.googleapis.com/css2?family=Lato');
 
 * {
@@ -18,7 +19,9 @@
   --light: #f1ecea;
   --dark: #00262b;
   --white: #fff;
-  --lato-font: 'Lato', sans-serif;
+  --lato-font: 'Gill Sans',
+  'Lato',
+  sans-serif;
 }
 
 body {

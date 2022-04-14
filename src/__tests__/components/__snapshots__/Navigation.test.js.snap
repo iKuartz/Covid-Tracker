@@ -14,8 +14,10 @@ exports[`CNavigation snapshot renders correctly 1`] = `
         href="/"
         onClick={[Function]}
       >
-        <i
-          className="fa-solid fa-angle-left"
+        <img
+          alt="Arrow pointing left to return to home page."
+          className="logo-img"
+          src="back-arrow.png"
         />
       </a>
     </li>
